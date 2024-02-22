@@ -17,7 +17,7 @@ Following is a `for` loop in Bash:
 
 x=0
 
-for i in {1..1000000}; do
+for (( i=0; i<1000000; i++ )); do
     x=$((x + 1))
 done
 ```
