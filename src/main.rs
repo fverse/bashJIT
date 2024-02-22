@@ -1,3 +1,8 @@
+use gccjit::Context;
+use std::env;
+
 fn main() {
-    println!("Hi mom!");
+    let mut args = env::args();
+    args.next();
+    let c = Context::default();
 }
